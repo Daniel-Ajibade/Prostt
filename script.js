@@ -453,3 +453,13 @@ if ('loading' in HTMLImageElement.prototype) {
         e.preventDefault();
     }
   });
+  document.getElementById("stickyCtaBtn").addEventListener("click", function () {
+    const orderForm = document.getElementById("orderFormElement");
+
+    if (orderForm) {
+      orderForm.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
